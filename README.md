@@ -3,6 +3,7 @@
 ## Program Description
 - Generate a random number
 - Track how many guesses for user to correctly guess the number
+- Inform user if their guess is too high or too low
 
 ## Learnings
 - `random` module is installed with python by default
