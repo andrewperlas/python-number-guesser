@@ -8,5 +8,7 @@
 - `random` module is installed with python by default
 - `random.randrange(start,stop)`
     - Stop number is not actually the maximum that could be randomly generated
-        - Example: If we want 10 as our maximum number, we need to set 11 as the Stop number
+        - Example: If we want 10 as our max number, we need to set 11 as the Stop number
+    - Use `random.randint(start,stop)` instead if you want the Stop number to be the max number
 - When user enters a value from our `input` request, the value will always be a string " "
+- `.isdigit()` method returns True isf all characters in a string are digits

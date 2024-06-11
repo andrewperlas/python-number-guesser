@@ -17,7 +17,7 @@ guess = 0
 
 while True:
     guess += 1
-    user_guess = input("Guess the number: ")
+    user_guess = input(f"Guess a number between 1 and {top_range}: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
     else:
@@ -32,6 +32,6 @@ while True:
             print(f"You got it in {guess} guesses!")
             break
     elif user_guess < random_number:
-        print("The number is higher than your guess")
+        print("Your guess is too low")
     else:
-        print("The number is lower than your guess")
+        print("Your guess is too high")
