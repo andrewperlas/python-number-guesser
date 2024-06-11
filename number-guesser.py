@@ -31,5 +31,7 @@ while True:
         else:
             print(f"You got it in {guess} guesses!")
             break
+    elif user_guess < random_number:
+        print("The number is higher than your guess")
     else:
-        print("Please guess again")
+        print("The number is lower than your guess")
