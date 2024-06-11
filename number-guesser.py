@@ -12,7 +12,7 @@ else:
     print("Please type a number")
     quit()
 
-random_number = random.randint(0, top_range)
+random_number = random.randint(1, top_range)
 guess = 0
 
 while True:
@@ -25,7 +25,11 @@ while True:
         continue
 
     if user_guess == random_number:
-        print(f"You got it in {guess} guesses!")
-        break
+        if guess == 1:
+            print(f"You got it in {guess} guess!")
+            break
+        else:
+            print(f"You got it in {guess} guesses!")
+            break
     else:
         print("Please guess again")
