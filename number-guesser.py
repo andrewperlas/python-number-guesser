@@ -2,13 +2,13 @@ import random
 
 top_range = input("Type a number: ")
 
-if top_range.isdigit():
+try:
     top_range = int(top_range)
     
     if top_range <= 0:
         print("Please type a number larger than 0")
         quit()
-else:
+except ValueError:
     print("Please type a number")
     quit()
 
